@@ -1,0 +1,23 @@
+-- CreateEnum
+CREATE TYPE "Role" AS ENUM ('CLIENT', 'ADMIN');
+
+-- CreateEnum
+CREATE TYPE "PlanKind" AS ENUM ('FIXED', 'CUSTOM');
+
+-- CreateEnum
+CREATE TYPE "OrderStatus" AS ENUM ('PENDING_PAYMENT', 'PAID', 'IN_PROGRESS', 'DELIVERED', 'CANCELLED');
+
+-- CreateEnum
+CREATE TYPE "PaymentMethod" AS ENUM ('BANK', 'JAZZCASH', 'EASYPAISA', 'CRYPTO_PLISIO');
+
+-- CreateEnum
+CREATE TYPE "PaymentStatus" AS ENUM ('AWAITING', 'RECEIPT_UPLOADED', 'CONFIRMED', 'REJECTED');
+
+-- CreateEnum
+CREATE TYPE "ProjectStage" AS ENUM ('QUEUED', 'DESIGN', 'BUILD', 'REVIEW', 'LIVE');
+
+-- CreateEnum
+CREATE TYPE "TicketStatus" AS ENUM ('OPEN', 'ANSWERED', 'CLOSED');
+
+-- CreateEnum
+CREATE TYPE "FileKind" AS ENUM ('RECEIPT', 'INVOICE', 'DELIVERABLE', 'ATTACHMENT');
